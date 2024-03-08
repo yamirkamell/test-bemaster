@@ -1,0 +1,154 @@
+{
+    "categories":[
+        {
+            "name": "Category 1",
+            "id": 1,
+            "movies": [
+                {
+                "id": 1,
+                "name": "pelicula 1",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 2,
+                "name": "pelicula 2",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 3,
+                "name": "pelicula 3",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 4,
+                "name": "pelicula 4",
+                "img": "",
+                "description": "--------"
+                }
+            ]
+        },
+        {
+            "name": "Category 2",
+            "id": 2,
+            "movies": [
+                {
+                "id": 1,
+                "name": "pelicula 1",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 2,
+                "name": "pelicula 2",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 3,
+                "name": "pelicula 3",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 4,
+                "name": "pelicula 4",
+                "img": "",
+                "description": "--------"
+                }
+            ]
+        },
+        {
+            "name": "Category 3",
+            "id": 3,
+            "movies": [
+                {
+                "id": 1,
+                "name": "pelicula 1",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 2,
+                "name": "pelicula 2",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 3,
+                "name": "pelicula 3",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 4,
+                "name": "pelicula 4",
+                "img": "",
+                "description": "--------"
+                }
+            ]
+        },
+        {
+            "name": "Category 4",
+            "id": 4,
+            "movies": [
+                {
+                "id": 1,
+                "name": "pelicula 1",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 2,
+                "name": "pelicula 2",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 3,
+                "name": "pelicula 3",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 4,
+                "name": "pelicula 4",
+                "img": "",
+                "description": "--------"
+                }
+            ]
+        },
+        {
+            "name": "Category 5",
+            "id": 5,
+            "movies": [
+                {
+                "id": 1,
+                "name": "pelicula 1",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 2,
+                "name": "pelicula 2",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 3,
+                "name": "pelicula 3",
+                "img": "",
+                "description": "--------"
+                },
+                {
+                "id": 4,
+                "name": "pelicula 4",
+                "img": "",
+                "description": "--------"
+                }
+            ]
+        }
+    ]
+}

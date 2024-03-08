@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Yamir Kamell",
+      "email": "yamir@test.com",
+      "password": "yamir123"
+    },
+    {
+      "id": 2,
+      "name": "test local",
+      "email": "local@test.com",
+      "password": "test123"
+    }
+  ]
+}
