@@ -5,6 +5,7 @@ import PasswordLogin from './../../assets/login/ic_pass.png';
 import BeMasterLogo from './../../assets/ic_bemaster.png';
 import InputComponent from './components/InputComponent';
 import ButtonComponent from './components/ButtonComponent';
+import MockUsers from '../../../mocks/api-authenticate/GET.json';
 import {
   BackgroundCenter,
   BackgroundSide,
@@ -17,20 +18,13 @@ import {
   ErrorText
 } from './styled';
 
-const Users = [
-  {
-    "id": 1,
-    "name": "Yamir Kamell",
-    "email": "yamir@test.com",
-    "password": "yamir123"
-  },
-  {
-    "id": 2,
-    "name": "test local",
-    "email": "local@test.com",
-    "password": "test123"
-  }
-];
+
+interface userTypes {
+  id: number
+  name: string
+  email: string
+  password: string
+}
 
 const Login = () => {
   const navigate = useNavigate();
@@ -39,7 +33,7 @@ const Login = () => {
   const [errorAlert, setErrorAlert] = useState(false);
 
   const LogIn = async () => {
-    Users.forEach(user => {
+    MockUsers.users.forEach((user: userTypes)  => {
       if (user.email === username && user.password === password) {
         return navigate('/home');
       }
@@ -48,7 +42,6 @@ const Login = () => {
       }
     });
   }
-
 
   return (
     <ContainerRoot>

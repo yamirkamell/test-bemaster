@@ -1,7 +1,12 @@
 import React from 'react';
 import { Button, ContainerComponent, } from './styled';
 
-const ButtonComponent = (props: any) => {
+interface buttonTypes {
+  title: string
+  press: () => Promise<void>
+}
+
+const ButtonComponent = (props: buttonTypes) => {
   const { title, press } = props;
 
   return (
