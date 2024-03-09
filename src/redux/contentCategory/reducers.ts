@@ -1,9 +1,10 @@
-import { SET_INITIAL, FormReducerAction } from './types';
+import { SET_INITIAL, SET_CONTENT_CATEGORY, FormReducerAction } from './types';
 
 const initialState = [
   {
     name: "",
     id: 0,
+    img: "",
     movies: [
         {
           id: 0,
@@ -21,6 +22,9 @@ const contentCategoryReducer = (state = initialState, action: FormReducerAction)
       return {
         ...initialState
       };
+
+    case SET_CONTENT_CATEGORY:
+    return action?.payload;
 
     default:
       return state;

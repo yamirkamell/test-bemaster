@@ -1,31 +1,35 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate, useLocation  } from 'react-router-dom';
-import { ContainerMain, ContainerMobile, ContainerSubHeader, Divider, LogoApp, Menu, SubMenu, TextComponent } from './styled';
+import { ContainerMain, ContainerMobile, ContainerSubHeader, Divider, LogoApp, Menu, TextComponent } from './styled';
 import BeMasterIcon from '../../assets/ic_bemaster.png';
+import { resources, retuResource } from '../../_data/resources';
 
+const links = [
+  {
+    label: 'home',
+    route: '/'
+  }, 
+  {
+    label: retuResource(resources._home_label),
+    route: 'home'
+  }, 
+  {
+    label: retuResource(resources._categories_label),
+    route: 'content-category'
+  }, 
+  {
+    label: retuResource(resources._films_label),
+    route: 'content-details'
+  }
+]
 
 const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const links = [
-    {
-      label: 'home',
-      route: '/'
-    }, 
-    {
-      label: 'INICIO',
-      route: 'home'
-    }, 
-    {
-      label: 'CATEGORIAS',
-      route: 'services'
-    }, 
-    {
-      label: 'PELICULAS',
-      route: 'aboutUs'
-    }
-  ]
+  const HandleRedirectUrl = (url: string) => {
+    navigate(url);
+  }
 
   return (
     <ContainerMain>
@@ -41,7 +45,8 @@ const NavBar = () => {
         </LogoApp>
         <Menu>
           { links.map(({ label, route }) => (
-            <div key={route} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center' }}>
+            <div key={route} onClick={()=>{HandleRedirectUrl(`/${route}`)}} 
+              style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center' }}>
               { label !== 'home' ?
                 <>
                   <TextComponent>

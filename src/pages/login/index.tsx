@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import UserLogin from './../../assets/login/ic_user.png';
 import PasswordLogin from './../../assets/login/ic_pass.png';
 import BeMasterLogo from './../../assets/ic_bemaster.png';
-import InputComponent from './components/InputComponent';
-import ButtonComponent from './components/ButtonComponent';
+import InputComponent from './components/inputComponent';
+import ButtonComponent from './components/buttonComponent';
+import MockUsers from '../../mocks/api-authenticate/GET.json';
 import {
   BackgroundCenter,
   BackgroundSide,
@@ -16,30 +17,23 @@ import {
   TitleComponent,
   ErrorText
 } from './styled';
+import { resources, retuResource } from '../../_data/resources';
 
-const Users = [
-  {
-    "id": 1,
-    "name": "Yamir Kamell",
-    "email": "yamir@test.com",
-    "password": "yamir123"
-  },
-  {
-    "id": 2,
-    "name": "test local",
-    "email": "local@test.com",
-    "password": "test123"
-  }
-];
+interface userTypes {
+  id: number
+  name: string
+  email: string
+  password: string
+}
 
 const Login = () => {
   const navigate = useNavigate();
-  const [username, setUsername] = useState('yamir@test.com');
-  const [password, setPassword] = useState('yamir123');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [errorAlert, setErrorAlert] = useState(false);
 
   const LogIn = async () => {
-    Users.forEach(user => {
+    MockUsers.users.forEach((user: userTypes)  => {
       if (user.email === username && user.password === password) {
         return navigate('/home');
       }
@@ -49,7 +43,6 @@ const Login = () => {
     });
   }
 
-
   return (
     <ContainerRoot>
       <BackgroundSide />
@@ -57,16 +50,16 @@ const Login = () => {
       <ContainerCenter>
         <img src={BeMasterLogo} alt='logo'/>
         <ContainerBody>
-          <TitleComponent> Inicia sesión</TitleComponent>
+          <TitleComponent> {retuResource(resources._login_label)}</TitleComponent>
           <ContainerInput>
-            <InputComponent placeholder='Usuario' type='text' img={UserLogin} name={username} setName={setUsername} />
-            <InputComponent placeholder='Contraseña' type='password' img={PasswordLogin} name={password} setName={setPassword} />
+            <InputComponent placeholder={retuResource(resources._user_label)} type='text' img={UserLogin} name={username} setName={setUsername} />
+            <InputComponent placeholder={retuResource(resources._password_label)} type='password' img={PasswordLogin} name={password} setName={setPassword} />
           </ContainerInput>
-          {errorAlert !== false ? <ErrorText>Usuario o Contraseña invalida</ErrorText>
+          {errorAlert !== false ? <ErrorText>{retuResource(resources._validate_login_label)}</ErrorText>
             : null}
-          <LostPassComponent> ¿Olvidaste tu contraseña?</LostPassComponent>
+          <LostPassComponent> {retuResource(resources._lost_password_label)}</LostPassComponent>
         </ContainerBody>
-        <ButtonComponent title='Iniciar sesión ' press={LogIn} />
+        <ButtonComponent title={retuResource(resources._login_label)} press={LogIn} />
       </ContainerCenter>
       <BackgroundSide />
     </ContainerRoot>
