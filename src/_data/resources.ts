@@ -7,8 +7,8 @@ export const resources = {
     _trends_label: { es: 'Tendencias', en: 'Trends' },
     _detail_label: { es: 'DETALLE', en: 'DETAIL' },
     _home_label: { es: 'INICIO', en: 'HOME' },
-    _categories_label: { es: 'CATEGORIAS: ', en: 'CATEGORIES' },
-    _films_label: { es: 'PELICULAS: ', en: 'FILMS' },
+    _categories_label: { es: 'CATEGORIAS ', en: 'CATEGORIES' },
+    _films_label: { es: 'PELICULAS ', en: 'FILMS' },
 }
 
 export function retuResource(resource: any) {
