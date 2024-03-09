@@ -1,11 +1,9 @@
 import { combineReducers } from 'redux';
-import contentCategoryReducer from './content-category/reducers';
+import contentCategory from './contentCategory/reducers';
 
 
 const rootReducer = combineReducers({
-  contentCategoryReducer
+  contentCategory
 });
-
-export type AppState = ReturnType<typeof rootReducer>
 
 export default rootReducer;

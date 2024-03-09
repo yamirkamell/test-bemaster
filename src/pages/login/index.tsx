@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import UserLogin from './../../assets/login/ic_user.png';
 import PasswordLogin from './../../assets/login/ic_pass.png';
 import BeMasterLogo from './../../assets/ic_bemaster.png';
-import InputComponent from './components/InputComponent';
-import ButtonComponent from './components/ButtonComponent';
+import InputComponent from './components/inputComponent';
+import ButtonComponent from './components/buttonComponent';
 import MockUsers from '../../mocks/api-authenticate/GET.json';
 import {
   BackgroundCenter,

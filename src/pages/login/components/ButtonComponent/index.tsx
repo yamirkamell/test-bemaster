@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ContainerComponent, } from './styled';
+import { Button, ContainerComponent } from './styled';
 
 interface buttonTypes {
   title: string

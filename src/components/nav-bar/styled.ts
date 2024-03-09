@@ -82,6 +82,7 @@ const TextComponent = styled.h1`
     font-weight: 600; 
     color: #ffff;
     text-shadow: 1px 1px 5px #4bffff;
+    cursor: pointer;
 `;
 
 export {

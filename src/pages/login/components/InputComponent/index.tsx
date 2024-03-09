@@ -1,4 +1,4 @@
-import { ContainerComponent, ContainerIcon, Input, Icon } from './styled';
+import { ContainerComponent, ContainerIcon, Icon, Input } from "./styled"
 
 interface inputTypes {
   placeholder: string
