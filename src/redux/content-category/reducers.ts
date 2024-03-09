@@ -4,6 +4,7 @@ const initialState = [
   {
     name: "",
     id: 0,
+    img: "",
     movies: [
         {
           id: 0,

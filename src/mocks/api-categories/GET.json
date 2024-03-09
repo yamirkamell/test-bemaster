@@ -1,8 +1,9 @@
 {
     "categories":[
         {
-            "name": "Category 1",
+            "name": "Anime",
             "id": 1,
+            "img": "https://www.industriaanimacion.com/wp-content/uploads/2021/06/Cover-1.jpg",
             "movies": [
                 {
                 "id": 1,
@@ -31,8 +32,9 @@
             ]
         },
         {
-            "name": "Category 2",
+            "name": "Ficción",
             "id": 2,
+            "img": "https://i.blogs.es/56d0cd/diseno-sin-titulo-4-/1366_2000.jpeg",
             "movies": [
                 {
                 "id": 1,
@@ -61,8 +63,9 @@
             ]
         },
         {
-            "name": "Category 3",
+            "name": "Aventura",
             "id": 3,
+            "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/10/mejores-peliculas-aventuras.jpg?tf=3840x",
             "movies": [
                 {
                 "id": 1,
@@ -91,8 +94,9 @@
             ]
         },
         {
-            "name": "Category 4",
+            "name": "Comedia",
             "id": 4,
+            "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/04/scary-movie.jpg?tf=3840x",
             "movies": [
                 {
                 "id": 1,
@@ -121,8 +125,9 @@
             ]
         },
         {
-            "name": "Category 5",
+            "name": "Terror",
             "id": 5,
+            "img": "https://terrores.files.wordpress.com/2021/01/mejor_terror_2020_peliculas_libros_juegos_comics.jpg?w=1200",
             "movies": [
                 {
                 "id": 1,

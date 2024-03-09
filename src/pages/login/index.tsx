@@ -5,7 +5,7 @@ import PasswordLogin from './../../assets/login/ic_pass.png';
 import BeMasterLogo from './../../assets/ic_bemaster.png';
 import InputComponent from './components/InputComponent';
 import ButtonComponent from './components/ButtonComponent';
-import MockUsers from '../../../mocks/api-authenticate/GET.json';
+import MockUsers from '../../mocks/api-authenticate/GET.json';
 import {
   BackgroundCenter,
   BackgroundSide,

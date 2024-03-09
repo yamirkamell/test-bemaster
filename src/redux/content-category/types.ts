@@ -3,6 +3,7 @@ export const SET_INITIAL = "@USER/SET_INITIAL";
 export interface productsInitialState {
     name: string
     id: number
+    img: string
     movies: Array<mockMovies>
 }
   
