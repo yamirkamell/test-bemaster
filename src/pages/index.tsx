@@ -10,7 +10,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Login />} />
         <Route path='/login' element={<Login />} />
         <Route path='/home' element={<Home />} />
         <Route path='/content-category' element={<ContentCategory />} />
