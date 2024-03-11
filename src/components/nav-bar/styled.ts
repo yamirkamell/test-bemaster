@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FiLogOut } from "react-icons/fi";
 
 const ContainerMain = styled.div`
     display: flex;
@@ -23,28 +24,17 @@ const ContainerSubHeader = styled.div`
     background-color: #4bffff;
     background-image: linear-gradient(315deg, #4bffff 0%, #041649 74%);
     @media (max-width: 720px) {
-        display: none;
+        justify-content: space-between;
     }
 `
-  
-const SubMenu = styled.div`
-    flex: .4;
-    display: flex;
-    justify-content: space-evenly;
-    @media (max-width: 720px) {
-        display:none;
-    }
-`
-  
+    
 const LogoApp = styled.div`
     display:flex;
     justify-content: center;
     margin-top: 10px;
     @media (max-width: 720px) {
         display:flex;
-        justify-content: center;
-        margin-top: 10px;
-        width: 90%;
+        padding-left: 20px;
     }
 `
   
@@ -54,8 +44,38 @@ const Menu = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width: 720px) {
+        display:none;
+    }
 `
-  
+
+const ContainerLogOut = styled.div`
+    margin: 0 5%; 
+    display: flex; 
+    align-items: center;
+    &:hover {
+        opacity: 0.5;
+        cursor: pointer;    
+        }
+`;
+
+const IconComponent = styled(FiLogOut)`
+    color: #ffff; 
+    margin: 3px 10px 0 0; 
+    font-size: 20px;
+    padding-right: 10px;
+    text-shadow: 1px 1px 5px #4bffff;
+
+`;
+
+const LogOutComponent = styled.span`
+    color: #ffff;
+    text-shadow: 1px 1px 5px #4bffff;
+    @media (max-width: 720px) {
+        display: none;
+    } 
+`;
+
 const Divider = styled.div`
     border-top: solid #ffff;
     width: 50px;
@@ -63,20 +83,6 @@ const Divider = styled.div`
     box-shadow: 1px 1px 5px #4bffff;
 `
   
-const ContainerMobile = styled.div`
-    display: none;
-    @media (max-width: 720px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 75px;
-        background-color: #4bffff;
-        background-image: linear-gradient(315deg, #4bffff 0%, #041649 74%);
-        width: 100%;
-    }
-`
-
 const TextComponent = styled.h1`
     font-size: 12px; 
     font-weight: 600; 
@@ -88,11 +94,12 @@ const TextComponent = styled.h1`
 export {
     ContainerMain, 
     ContainerSubHeader,
-    SubMenu,
     LogoApp, 
     Menu, 
+    ContainerLogOut,
+    IconComponent,
+    LogOutComponent,
     Divider,
-    ContainerMobile,
     TextComponent,
   };
   

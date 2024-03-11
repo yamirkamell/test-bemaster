@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation  } from 'react-router-dom';
-import { ContainerMain, ContainerMobile, ContainerSubHeader, Divider, LogoApp, Menu, TextComponent } from './styled';
+import { ContainerLogOut, ContainerMain, ContainerSubHeader, Divider, IconComponent, LogOutComponent, LogoApp, Menu, TextComponent } from './styled';
 import BeMasterIcon from '../../assets/ic_bemaster.png';
 import { resources, retuResource } from '../../_data/resources';
 
@@ -33,12 +33,6 @@ const NavBar = () => {
 
   return (
     <ContainerMain>
-      <ContainerMobile>
-        <LogoApp>
-          <img src={BeMasterIcon} alt='metaImg' style={{height: 45}} />
-        </LogoApp>
-      </ContainerMobile>
-
       <ContainerSubHeader>
         <LogoApp>
           <img src={BeMasterIcon} alt='metaImg' style={{height: 45}}/>
@@ -62,6 +56,10 @@ const NavBar = () => {
             </div>
           ))}
         </Menu>
+        <ContainerLogOut onClick={() => {HandleRedirectUrl('/login')}}>
+          <IconComponent />
+          <LogOutComponent> {retuResource(resources._logout_label)}</LogOutComponent>
+        </ContainerLogOut>
       </ContainerSubHeader>
   </ContainerMain >
   );
