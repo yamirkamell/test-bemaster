@@ -9,6 +9,7 @@ export const resources = {
     _home_label: { es: 'INICIO', en: 'HOME' },
     _categories_label: { es: 'CATEGORIAS ', en: 'CATEGORIES' },
     _films_label: { es: 'PELICULAS ', en: 'FILMS' },
+    _logout_label: { es: 'Cerrar sesión', en: 'Log out'}
 }
 
 export function retuResource(resource: any) {
